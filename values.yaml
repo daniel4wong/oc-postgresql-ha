@@ -26,11 +26,6 @@ pgpool:
       value: "username@example.com"
     - name: PGADMIN_DEFAULT_PASSWORD
       value: "password"
-  service:
-    extraPorts:
-    - name: postgresql-ha-pgadmin
-      port: 80
-      targetPort: 80
 postgresql:
   containerSecurityContext:
     enabled: false
