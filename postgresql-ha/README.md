@@ -49,3 +49,8 @@
 - `helm uninstall postgresql-ha`
 - `oc delete pvc -l app.kubernetes.io/name=postgresql-ha`
 - `oc delete all -l app.kubernetes.io/name=postgresql-ha` (Optional)
+
+
+## Reference
+- https://github.com/bitnami/charts/tree/master/bitnami/postgresql-ha
+- https://docs.bitnami.com/kubernetes/infrastructure/postgresql-ha/configuration/configure-sidecar-init-containers/

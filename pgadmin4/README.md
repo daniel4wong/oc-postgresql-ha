@@ -10,12 +10,13 @@
 
 ## 2. Install dpage/pgadmin4
 
-### Install bitnami/postgresql-ha
+### Install dpage/pgadmin4
 ```
 oc new-app docker.io/dpage/pgadmin4 --name pgadmin4 \
 -e PGADMIN_DEFAULT_EMAIL="username@example.com" \
 -e PGADMIN_DEFAULT_PASSWORD="password"
 ```
+
 
 ## 3. After install
 
@@ -30,3 +31,7 @@ oc new-app docker.io/dpage/pgadmin4 --name pgadmin4 \
 ## 5. Uninstall all resources
 - `oc get all -l app=pgadmin4`
 - `oc delete all -l app=pgadmin4`
+
+
+## Reference
+- https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
